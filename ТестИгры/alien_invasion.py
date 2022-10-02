@@ -198,8 +198,8 @@ class AlienInvasion:
         #    self.is_fire_bullet = False; 
                     
     def _update_screen(self):
-        self.screen.blit(self.bg_image, (0,0))
-        #self.screen.fill(self.bg_color)
+        #self.screen.blit(self.bg_image, (0,0))
+        self.screen.fill(self.bg_color)
         self.ship.blitme()
         for bullet in self.bullets.sprites():
             bullet.draw_bullet()
